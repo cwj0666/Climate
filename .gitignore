@@ -10,3 +10,6 @@ __pycache__/
 # Local agent/navigation files and archived notebooks
 HERMES.md
 notebooks/_archive/
+
+# Local archive only
+_archive/

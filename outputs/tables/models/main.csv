@@ -1,0 +1,2 @@
+model,selected_shard,validation,folds,rmse,mae,wape,r2,hit_rate,balanced_accuracy,macro_f1,correlation,ic
+VMD-GARCH-LSTM,Shard 3,28-fold expanding walk-forward,28,0.2104,0.1497,95.49,0.0503,0.6196,0.6209,0.615,0.3544,0.3048

@@ -1,7 +1,0 @@
-﻿policy,target,elapsed_cap,sample_count,coverage_rate,date_start,date_end
-no_elapsed_filter,target_logret_30d,,2110,0.9896810506566605,2015-01-12,2026-03-24
-no_elapsed_filter,target_logret_60d,,2089,0.9798311444652908,2015-01-12,2026-02-20
-nominal_plus_5,target_logret_30d,35.0,2046,0.9596622889305816,2016-03-15,2026-03-24
-nominal_plus_5,target_logret_60d,65.0,2028,0.9512195121951219,2015-10-07,2026-02-20
-nominal_plus_15,target_logret_30d,45.0,2094,0.9821763602251408,2015-12-09,2026-03-24
-nominal_plus_15,target_logret_60d,75.0,2074,0.9727954971857411,2015-10-07,2026-02-20

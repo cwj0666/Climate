@@ -1,0 +1,126 @@
+feature,feature_label_ko,feature_group,source,source_column,asof_rule,selection_status
+mkt_vol_ma60,거래량 이동평균,market_microstructure,current_pm_final,mkt_vol_ma60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+fuel_anth_krwkwh,무연탄 단가,power_energy,current_pm_final,fuel_anth_krwkwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_peak_dem_mw,최대 전력수요,power_energy,current_pm_final,pwr_peak_dem_mw,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_coal_gas_gwh,석탄가스 발전량,power_energy,current_pm_final,pwr_coal_gas_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_hydro_gwh,수력 발전량,power_energy,current_pm_final,pwr_hydro_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_mkt_tot_gwh,총 전력시장 거래량,power_energy,current_pm_final,pwr_mkt_tot_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_nuke_gwh,원자력 발전량,power_energy,current_pm_final,pwr_nuke_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_wind_gwh,풍력 발전량,power_energy,current_pm_final,pwr_wind_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_smp_jeju_krwkwh,계통한계가격,power_energy,current_pm_final,pwr_smp_jeju_krwkwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+wx_nat_cdd18,전국 냉방도일,weather,current_pm_final,wx_nat_cdd18,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+wx_nat_hdd18,전국 난방도일,weather,current_pm_final,wx_nat_hdd18,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+fuel_heat_lng_krwgcal,LNG 열량단가,power_energy,current_pm_final,fuel_heat_lng_krwgcal,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+wx_stn_min_temp_c,관측소 최저기온,weather,current_pm_final,wx_stn_min_temp_c,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+wx_stn_avg_rh,관측소 평균습도,weather,current_pm_final,wx_stn_avg_rh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+mkt_daily_logret,시장 일간 로그수익률,market_microstructure,current_pm_final,mkt_daily_logret,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_logret_lag1,시장 수익률 시차,market_microstructure,current_pm_final,mkt_logret_lag1,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_logret_lag5,시장 수익률 시차,market_microstructure,current_pm_final,mkt_logret_lag5,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_logret_ma20,시장 수익률 이동평균,market_microstructure,current_pm_final,mkt_logret_ma20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_logret_ma5,시장 수익률 이동평균,market_microstructure,current_pm_final,mkt_logret_ma5,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_logret_ma60,시장 수익률 이동평균,market_microstructure,current_pm_final,mkt_logret_ma60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_logret_vol_20d,시장 수익률 변동성,market_microstructure,current_pm_final,mkt_logret_vol_20d,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_vol,거래량,market_microstructure,current_pm_final,mkt_vol,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_vol_lag1,거래량 시차,market_microstructure,current_pm_final,mkt_vol_lag1,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_vol_lag20,거래량 시차,market_microstructure,current_pm_final,mkt_vol_lag20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_vol_lag5,거래량 시차,market_microstructure,current_pm_final,mkt_vol_lag5,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_vol_lag60,거래량 시차,market_microstructure,current_pm_final,mkt_vol_lag60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_vol_ma20,거래량 이동평균,market_microstructure,current_pm_final,mkt_vol_ma20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_vol_ma5,거래량 이동평균,market_microstructure,current_pm_final,mkt_vol_ma5,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_vol_std20,거래량 변동성,market_microstructure,current_pm_final,mkt_vol_std20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+mkt_vol_std60,거래량 변동성,market_microstructure,current_pm_final,mkt_vol_std60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+fuel_oil_krwkwh,유류 연료비,power_energy,current_pm_final,fuel_oil_krwkwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+fuel_bitum_coal_krwton,유연탄 가격,power_energy,current_pm_final,fuel_bitum_coal_krwton,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_day,전력수급 기준일,power_energy,current_pm_final,pwr_day,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_sup_cap_mw,전력 공급능력,power_energy,current_pm_final,pwr_sup_cap_mw,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_anth_gwh,무연탄 발전량,power_energy,current_pm_final,pwr_anth_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_bitum_coal_gwh,유연탄 발전량,power_energy,current_pm_final,pwr_bitum_coal_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_ocean_gwh,해양 발전량,power_energy,current_pm_final,pwr_ocean_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_oil_gwh,유류 발전량,power_energy,current_pm_final,pwr_oil_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_other_gwh,기타 발전량,power_energy,current_pm_final,pwr_other_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_pumped_storage_gwh,양수 발전량,power_energy,current_pm_final,pwr_pumped_storage_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_solar_gwh,태양광 발전량,power_energy,current_pm_final,pwr_solar_gwh,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+wx_nat_is_precip_day,강수 발생 여부,weather,current_pm_final,wx_nat_is_precip_day,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+wx_nat_precip_mm,전국 강수량,weather,current_pm_final,wx_nat_precip_mm,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+wx_stn_sunshine_hours,관측소 일조시간,weather,current_pm_final,wx_stn_sunshine_hours,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+ext_us10y_z60,미국 10년물 금리,external_market,current_pm_final,ext_us10y_z60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_us10y_chg20,미국 10년물 금리,external_market,current_pm_final,ext_us10y_chg20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_kr10y_chg20,한국 10년물 금리,external_market,current_pm_final,ext_kr10y_chg20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_kr10y_z60,한국 10년물 금리,external_market,current_pm_final,ext_kr10y_z60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_sp500_z60,S&P500,external_market,current_pm_final,ext_sp500_z60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_vkospi_z60,VKOSPI,external_market,current_pm_final,ext_vkospi_z60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_gold_z60,금 가격,external_market,current_pm_final,ext_gold_z60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_gold_ret20,금 가격,external_market,current_pm_final,ext_gold_ret20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_vkospi_chg20,VKOSPI,external_market,current_pm_final,ext_vkospi_chg20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+fx_usdkrw_ret20,원/달러 환율,external_market,current_pm_final,fx_usdkrw_ret20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_kospi_z60,KOSPI,external_market,current_pm_final,ext_kospi_z60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+fx_usdkrw_z60,원/달러 환율,external_market,current_pm_final,fx_usdkrw_z60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_kospi_ret20,KOSPI,external_market,current_pm_final,ext_kospi_ret20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_sp500_ret20,S&P500,external_market,current_pm_final,ext_sp500_ret20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_vix_z60,VIX,external_market,current_pm_final,ext_vix_z60,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+ext_vix_chg20,VIX,external_market,current_pm_final,ext_vix_chg20,기존 pm_final 생성 규칙을 승계한다. 시장 일별 피처는 거래일 기준으로 정렬하며 예측 배치에 따라 same-day close 또는 lagged deployment를 구분한다.,selected
+pol_comp_attn,이행마감 관심도,policy_compliance,current_pm_final,pol_comp_attn,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pol_comp_deadline_w,이행마감 가중치,policy_compliance,current_pm_final,pol_comp_deadline_w,원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+search_kau_intensity_level,KAU 검색 관심도,nlp,features/nlp_final/nlp_final_features.parquet,search_kau_intensity_level,NLP feature package의 as-of 검증 결과를 승계한다. 기사/검색/정책 signal은 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.,selected
+search_kau_intensity_shock,KAU 검색 관심도,nlp,features/nlp_final/nlp_final_features.parquet,search_kau_intensity_shock,NLP feature package의 as-of 검증 결과를 승계한다. 기사/검색/정책 signal은 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.,selected
+search_kau_intensity_percentile_60d,KAU 검색 관심도,nlp,features/nlp_final/nlp_final_features.parquet,search_kau_intensity_percentile_60d,NLP feature package의 as-of 검증 결과를 승계한다. 기사/검색/정책 signal은 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.,selected
+search_kau_intensity_ratio_20d,KAU 검색 관심도,nlp,features/nlp_final/nlp_final_features.parquet,search_kau_intensity_ratio_20d,NLP feature package의 as-of 검증 결과를 승계한다. 기사/검색/정책 signal은 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.,selected
+gov_policy_tightening_index,정부 정책 긴축지수,nlp,features/nlp_final/nlp_final_features.parquet,gov_policy_tightening_index,NLP feature package의 as-of 검증 결과를 승계한다. 기사/검색/정책 signal은 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.,selected
+gov_compliance_policy_attention,정부 이행정책 관심도,nlp,features/nlp_final/nlp_final_features.parquet,gov_compliance_policy_attention,NLP feature package의 as-of 검증 결과를 승계한다. 기사/검색/정책 signal은 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.,selected
+news_text_tightening_minus_easing_60d,뉴스 긴축-완화 tone,nlp,features/nlp_final/nlp_final_features.parquet,news_text_tightening_minus_easing_60d,NLP feature package의 as-of 검증 결과를 승계한다. 기사/검색/정책 signal은 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.,selected
+news_text_tightening_minus_easing_30d,뉴스 긴축-완화 tone,nlp,features/nlp_final/nlp_final_features.parquet,news_text_tightening_minus_easing_30d,NLP feature package의 as-of 검증 결과를 승계한다. 기사/검색/정책 signal은 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.,selected
+fuel_lng_japan,LNG 가격,fuel,raw.commodities_monthly,lng_japan,외부 원자재 월별/일별 값은 원천 frequency에 맞춘 보수적 as-of key로 정렬한다.,selected
+fuel_natgas_europe,천연가스 가격,fuel,raw.commodities_monthly,natgas_europe,외부 원자재 월별/일별 값은 원천 frequency에 맞춘 보수적 as-of key로 정렬한다.,selected
+fuel_coal_newcastle,석탄 가격,fuel,raw.commodities_monthly,coal_newcastle,외부 원자재 월별/일별 값은 원천 frequency에 맞춘 보수적 as-of key로 정렬한다.,selected
+pwr_fuel_price_anthracite_krw_pe,무연탄 연료가격,pwr,raw.epsis_fuel_cost_monthly,fuel_price_anthracite_krw_per_ton,월별 EPSIS 피처는 다음 달 말 공개 가정을 적용하고 asof_date <= trd_dd 조건으로 정렬한다.,selected
+pwr_fuel_cost_nuclear_krw_per_kw,원자력 연료비,pwr,raw.epsis_fuel_cost_monthly,fuel_cost_nuclear_krw_per_kwh,월별 EPSIS 피처는 다음 달 말 공개 가정을 적용하고 asof_date <= trd_dd 조건으로 정렬한다.,selected
+pwr_minimum_demand_mw,최소 전력수요,pwr,raw.epsis_power_supply_daily,minimum_demand_mw,feature_date 관측값은 보수적으로 asof_date <= trd_dd 조건으로 backward join한다. 일별 공공 데이터는 t+1 공개 가정을 적용한다.,selected
+pwr_trade_volume_ppa_total_gwh,PPA 전력거래량,pwr,raw.epsis_power_trade_volume_monthly,trade_volume_ppa_total_gwh,월별 EPSIS 피처는 다음 달 말 공개 가정을 적용하고 asof_date <= trd_dd 조건으로 정렬한다.,selected
+ext_lpr,EUA 저가,ext,raw.eua_daily,lpr,외부시장 일별 지표는 해당 시장 관측일 이후 사용 가능하다고 보고 asof_date <= trd_dd로 정렬한다.,selected
+ext_acc_trdvol,EUA 누적거래량,ext,raw.eua_daily,acc_trdvol,외부시장 일별 지표는 해당 시장 관측일 이후 사용 가능하다고 보고 asof_date <= trd_dd로 정렬한다.,selected
+pol_no_5,인증배출 순번 proxy,pol,raw.gir_certified_emissions,no,공식 배출·intensity 공시는 annual_t+1 또는 source-specific disclosure lag를 적용하고 asof_date <= trd_dd로 정렬한다.,selected
+wx_avg_wind_speed_mps,평균풍속,wx,raw.kma_asos_weather_daily,avg_wind_speed_mps,feature_date 관측값은 보수적으로 asof_date <= trd_dd 조건으로 backward join한다. 일별 공공 데이터는 t+1 공개 가정을 적용한다.,selected
+wx_solar_radiation_mj_m2,일사량,wx,raw.kma_asos_weather_daily,solar_radiation_mj_m2,feature_date 관측값은 보수적으로 asof_date <= trd_dd 조건으로 backward join한다. 일별 공공 데이터는 t+1 공개 가정을 적용한다.,selected
+src_period_2,제도 기간 proxy,src,raw.kospo_intensity,period,공식 배출·intensity 공시는 annual_t+1 또는 source-specific disclosure lag를 적용하고 asof_date <= trd_dd로 정렬한다.,selected
+src_intensity,배출/발전 intensity,src,raw.kospo_intensity,intensity,공식 배출·intensity 공시는 annual_t+1 또는 source-specific disclosure lag를 적용하고 asof_date <= trd_dd로 정렬한다.,selected
+mkt_clsprc,종가,mkt,raw.krx_ets_daily,clsprc,KRX 일별 시장 원천을 거래일 기준으로 정렬한다. 실거래 이후 생성되는 값은 end-of-day backtest 기준으로 사용하며 live pre-close 사용 시 lag1 전환이 필요하다.,selected
+mkt_chgh,전일 대비 가격변화,mkt,raw.krx_ets_daily,chgh,KRX 일별 시장 원천을 거래일 기준으로 정렬한다. 실거래 이후 생성되는 값은 end-of-day backtest 기준으로 사용하며 live pre-close 사용 시 lag1 전환이 필요하다.,selected
+mkt_opr,시가,mkt,raw.krx_ets_daily,opr,KRX 일별 시장 원천을 거래일 기준으로 정렬한다. 실거래 이후 생성되는 값은 end-of-day backtest 기준으로 사용하며 live pre-close 사용 시 lag1 전환이 필요하다.,selected
+mkt_acc_trdval,누적 거래대금,mkt,raw.krx_ets_daily,acc_trdval,KRX 일별 시장 원천을 거래일 기준으로 정렬한다. 실거래 이후 생성되는 값은 end-of-day backtest 기준으로 사용하며 live pre-close 사용 시 lag1 전환이 필요하다.,selected
+ext_kospi,KOSPI,ext,raw.macro_indicators,kospi,외부시장 일별 지표는 해당 시장 관측일 이후 사용 가능하다고 보고 asof_date <= trd_dd로 정렬한다.,selected
+ext_value,거시시장 지표값,ext,raw.macro_market_indicator_daily,value,외부시장 일별 지표는 해당 시장 관측일 이후 사용 가능하다고 보고 asof_date <= trd_dd로 정렬한다.,selected
+fuel_wti,WTI 유가,fuel,raw.oil_daily,wti,외부 원자재 월별/일별 값은 원천 frequency에 맞춘 보수적 as-of key로 정렬한다.,selected
+nlp_finbert_count_60d,FinBERT 기사 수 60일 합계,nlp_finbert,runpod_gpu_inference,nlp_kfinbert_article_count_60d,article asof_date <= trd_dd; published_date + 1 calendar day; backward merge_asof; 60d rolling aggregate,selected
+wx_stn_max_temp_c,관측소 최고기온,weather,current_pm_final,wx_stn_max_temp_c,기존 `current_pm_final` 생성 규칙을 승계한다. 기상 관측값은 보수적으로 asof_date <= trd_dd 조건에 맞춰 정렬한다.,selected
+compliance_deadline_calendar_weight,이행마감 달력가중치,nlp,features/nlp_final/nlp_final_features.parquet,compliance_deadline_calendar_weight,"NLP feature package의 as-of 검증 결과를 승계한다. 이행마감 calendar feature는 거래일 기준 사전 정의된 제도 일정만 사용하고, attention feature는 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.",selected
+compliance_deadline_attention,이행마감 관심도,nlp,features/nlp_final/nlp_final_features.parquet,compliance_deadline_attention,"NLP feature package의 as-of 검증 결과를 승계한다. 이행마감 calendar feature는 거래일 기준 사전 정의된 제도 일정만 사용하고, attention feature는 공개일 또는 수집 asof_date <= trd_dd 조건으로 정렬한다.",selected
+pwr_renewable_total_gwh,재생에너지 총 발전량,power_energy,current_pm_final,pwr_renewable_total_gwh,기존 `current_pm_final` 생성 규칙을 승계한다. 전력·발전믹스 계열은 원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_installed_capacity_mw,전력 설비용량,pwr,raw.epsis_power_supply_daily,installed_capacity_mw,EPSIS 일별 전력수급 피처는 관측일의 다음 calendar day부터 사용 가능하다고 보고 asof_date <= trd_dd 조건으로 backward join한다.,selected
+pwr_trade_volume_fuel_cell_gwh,연료전지 전력거래량,pwr,raw.epsis_power_trade_volume_monthly,trade_volume_fuel_cell_gwh,EPSIS 월별 전력거래량 피처는 다음 달 말 공개 가정을 적용하고 asof_date <= trd_dd 조건으로 정렬한다.,selected
+pwr_bio_gwh,바이오 발전량,power_energy,current_pm_final,pwr_bio_gwh,기존 `current_pm_final` 생성 규칙을 승계한다. 전력·발전믹스 계열은 원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_market_ppa_total_gwh,시장·PPA 총 전력거래량,power_energy,current_pm_final,pwr_market_ppa_total_gwh,기존 `current_pm_final` 생성 규칙을 승계한다. 전력·발전믹스 계열은 원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+ext_usdkrw,원/달러 환율,ext,raw.macro_indicators,usdkrw,외부시장·거시 일별 지표는 해당 시장 관측일 이후 사용 가능하다고 보고 asof_date <= trd_dd 조건으로 정렬한다. live pre-close 사용 시 lag1 전환을 검토한다.,selected
+pwr_lng_gwh,LNG 발전량,power_energy,current_pm_final,pwr_lng_gwh,기존 `current_pm_final` 생성 규칙을 승계한다. 전력·발전믹스 계열은 원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_resv_cap_mw,전력 예비력,power_energy,current_pm_final,pwr_resv_cap_mw,기존 `current_pm_final` 생성 규칙을 승계한다. 전력·발전믹스 계열은 원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+pwr_resv_mgn_pct,전력 예비율,power_energy,current_pm_final,pwr_resv_mgn_pct,기존 `current_pm_final` 생성 규칙을 승계한다. 전력·발전믹스 계열은 원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+mkt_vol_log1p,로그 거래량,market_microstructure,current_pm_final,mkt_vol_log1p,KRX 일별 시장 원천을 거래일 기준으로 정렬한다. 실거래 이후 생성되는 값은 end-of-day backtest 기준으로 사용하며 live pre-close 사용 시 lag1 전환이 필요하다.,selected
+mkt_acc_trdvol,누적거래량,mkt,raw.krx_ets_daily,acc_trdvol,KRX 일별 시장 원천을 거래일 기준으로 정렬한다. 실거래 이후 생성되는 값은 end-of-day backtest 기준으로 사용하며 live pre-close 사용 시 lag1 전환이 필요하다.,selected
+pwr_waste_gwh,폐기물 발전량,power_energy,current_pm_final,pwr_waste_gwh,기존 `current_pm_final` 생성 규칙을 승계한다. 전력·발전믹스 계열은 원천별 disclosure/as-of key를 사용해 trd_dd 이전에 관측 가능한 값만 결합한다.,selected
+auc_trdcnt,경매 체결건수,auction,reviewed_addback,krx_auction_monthly__acc_trdcnt,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_part_cnt,경매 참여자수,auction,reviewed_addback,krx_auction_monthly__auct_trd_partc_cnt,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_trd_qty,경매 거래수량,auction,reviewed_addback,krx_auction_monthly__auct_trd_qty,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_trd_rto,경매 낙찰률,auction,reviewed_addback,krx_auction_monthly__auct_trd_rto,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_appl_qty,경매 응찰수량,auction,reviewed_addback,krx_auction_monthly__onewayauct_appl_qty,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_hgst_ord_prc,경매 최고 주문가격,auction,reviewed_addback,krx_auction_monthly__hgst_ord_prc,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_lwst_ord_prc,경매 최저 주문가격,auction,reviewed_addback,krx_auction_monthly__lwst_ord_prc,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+mkt_n_vintages,거래 vintage 수,market_microstructure,reviewed_addback,mkt_n_vintages,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+mkt_is_blended,복수 vintage 거래 여부,market_microstructure,reviewed_addback,mkt_is_blended,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+mkt_vwap_range,vintage 간 VWAP 범위,market_microstructure,reviewed_addback,mkt_vwap_range,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+pwr_smp_total_krwkwh,통합 SMP,power_energy,reviewed_addback,epsis_smp_monthly__smp_total_krw_per_kwh,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+pwr_smp_land_krwkwh,육지 SMP,power_energy,reviewed_addback,epsis_smp_monthly__smp_land_krw_per_kwh,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+fuel_lng_krwkwh,LNG 연료비,power_energy,reviewed_addback,epsis_fuel_cost_monthly__fuel_cost_lng_krw_per_kwh,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+wx_stn_cdd18,관측소 냉방도일,weather,reviewed_addback,kma_asos_weather_station_daily__cdd18,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+mkt_vwap_lag1,시장 VWAP 1일 시차,market_microstructure,reviewed_addback,mkt_market_vwap_lag_1d,과거 거래일의 시장 VWAP 시차값만 사용한다. 현재일 market_vwap 및 log_market_vwap은 target denominator와 중복되어 제외한다.,selected_addback
+mkt_vwap_lag5,시장 VWAP 5일 시차,market_microstructure,reviewed_addback,mkt_market_vwap_lag_5d,과거 거래일의 시장 VWAP 시차값만 사용한다. 현재일 market_vwap 및 log_market_vwap은 target denominator와 중복되어 제외한다.,selected_addback
+mkt_vwap_lag20,시장 VWAP 20일 시차,market_microstructure,reviewed_addback,mkt_market_vwap_lag_20d,과거 거래일의 시장 VWAP 시차값만 사용한다. 현재일 market_vwap 및 log_market_vwap은 target denominator와 중복되어 제외한다.,selected_addback
+mkt_vwap_lag60,시장 VWAP 60일 시차,market_microstructure,reviewed_addback,mkt_market_vwap_lag_60d,과거 거래일의 시장 VWAP 시차값만 사용한다. 현재일 market_vwap 및 log_market_vwap은 target denominator와 중복되어 제외한다.,selected_addback

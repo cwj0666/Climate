@@ -1,0 +1,19 @@
+feature,feature_label_ko,feature_group,source,source_column,asof_rule,selection_status
+auc_trdcnt,경매 체결건수,auction,reviewed_addback,krx_auction_monthly__acc_trdcnt,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_part_cnt,경매 참여자수,auction,reviewed_addback,krx_auction_monthly__auct_trd_partc_cnt,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_trd_qty,경매 거래수량,auction,reviewed_addback,krx_auction_monthly__auct_trd_qty,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_trd_rto,경매 낙찰률,auction,reviewed_addback,krx_auction_monthly__auct_trd_rto,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_appl_qty,경매 응찰수량,auction,reviewed_addback,krx_auction_monthly__onewayauct_appl_qty,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_hgst_ord_prc,경매 최고 주문가격,auction,reviewed_addback,krx_auction_monthly__hgst_ord_prc,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+auc_lwst_ord_prc,경매 최저 주문가격,auction,reviewed_addback,krx_auction_monthly__lwst_ord_prc,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+mkt_n_vintages,거래 vintage 수,market_microstructure,reviewed_addback,mkt_n_vintages,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+mkt_is_blended,복수 vintage 거래 여부,market_microstructure,reviewed_addback,mkt_is_blended,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+mkt_vwap_range,vintage 간 VWAP 범위,market_microstructure,reviewed_addback,mkt_vwap_range,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+pwr_smp_total_krwkwh,통합 SMP,power_energy,reviewed_addback,epsis_smp_monthly__smp_total_krw_per_kwh,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+pwr_smp_land_krwkwh,육지 SMP,power_energy,reviewed_addback,epsis_smp_monthly__smp_land_krw_per_kwh,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+fuel_lng_krwkwh,LNG 연료비,power_energy,reviewed_addback,epsis_fuel_cost_monthly__fuel_cost_lng_krw_per_kwh,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+wx_stn_cdd18,관측소 냉방도일,weather,reviewed_addback,kma_asos_weather_station_daily__cdd18,원천 공시/거래일 기준으로 trd_dd 이전 또는 해당 거래일 관측 가능한 값만 사용한다. market_vwap/log/lag level은 target construction overlap으로 제외한다.,selected_addback
+mkt_vwap_lag1,시장 VWAP 1일 시차,market_microstructure,reviewed_addback,mkt_market_vwap_lag_1d,과거 거래일의 시장 VWAP 시차값만 사용한다. 현재일 market_vwap 및 log_market_vwap은 target denominator와 중복되어 제외한다.,selected_addback
+mkt_vwap_lag5,시장 VWAP 5일 시차,market_microstructure,reviewed_addback,mkt_market_vwap_lag_5d,과거 거래일의 시장 VWAP 시차값만 사용한다. 현재일 market_vwap 및 log_market_vwap은 target denominator와 중복되어 제외한다.,selected_addback
+mkt_vwap_lag20,시장 VWAP 20일 시차,market_microstructure,reviewed_addback,mkt_market_vwap_lag_20d,과거 거래일의 시장 VWAP 시차값만 사용한다. 현재일 market_vwap 및 log_market_vwap은 target denominator와 중복되어 제외한다.,selected_addback
+mkt_vwap_lag60,시장 VWAP 60일 시차,market_microstructure,reviewed_addback,mkt_market_vwap_lag_60d,과거 거래일의 시장 VWAP 시차값만 사용한다. 현재일 market_vwap 및 log_market_vwap은 target denominator와 중복되어 제외한다.,selected_addback

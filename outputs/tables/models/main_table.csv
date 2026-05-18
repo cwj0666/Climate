@@ -1,0 +1,14 @@
+항목,값
+모델,VMD-GARCH-LSTM
+선정 Shard,Shard 3
+검증 방식,28-fold expanding walk-forward
+Fold 수,28
+RMSE,0.2104
+MAE,0.1497
+WAPE,95.49
+R²,0.0503
+Hit rate,0.620
+Balanced accuracy,0.621
+Macro F1,0.615
+Correlation,0.354
+IC,0.305
