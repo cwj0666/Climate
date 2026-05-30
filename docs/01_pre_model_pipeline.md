@@ -1,0 +1,108 @@
+# FEMS Pre-Model Pipeline
+
+```mermaid
+flowchart LR
+    %% FEMS pre-model pipeline skeleton
+
+    subgraph SRC["Source / Replay"]
+        SENSOR["Live sensor event"]
+        REPLAY["PostgreSQL replay source<br/>canonical last 1y"]
+        ARCHIVE["archive source<br/>corrected_resampled csv.gz"]
+    end
+
+    subgraph MONGO["MongoDB database: fems"]
+        M_RAW["measurement_raw<br/>source event buffer"]
+        M_BUF["measurement_buffer<br/>equal-interval candidate"]
+        M_REJ["measurement_reject<br/>transient reject buffer"]
+        M_CUR["measurement_cursor<br/>watermark / replay state"]
+        M_CACHE["measurement_read_cache<br/>recent dashboard/chat cache"]
+    end
+
+    subgraph WORKER["Measurement Workers"]
+        INGEST["measurement_ingest_worker"]
+        NORMALIZE["measurement_interval_worker<br/>bucket / dedup / aggregate"]
+        QA_GATE["qa_gate<br/>schema / value / coverage"]
+        PROMOTE["measurement_promote_worker"]
+    end
+
+    subgraph PG["PostgreSQL database: fems"]
+        subgraph OPS["ops schema"]
+            OPS_RUN["measurement_load_run"]
+            OPS_FILE["measurement_file_state"]
+            OPS_SPLIT["data_split"]
+            OPS_REPLAY["measurement_replay_run"]
+            OPS_JOB["api_job"]
+        end
+
+        subgraph QA["qa schema"]
+            QA_RUN["measurement_check_run"]
+            QA_RESULT["measurement_check_result"]
+            QA_COV["measurement_coverage"]
+            QA_QUAR["measurement_quarantine"]
+        end
+
+        subgraph CANON["canonical schema"]
+            C15["measurement_15min"]
+            C1H["measurement_1h"]
+        end
+
+        subgraph MART["mart schema"]
+            MART_DEFER["deferred<br/>create after query pattern fixed"]
+        end
+    end
+
+    subgraph APP["Application Skeleton"]
+        API["FastAPI<br/>read / status / job / chat"]
+        AIRFLOW["Airflow<br/>disabled DAG skeleton"]
+        LG["LangGraph shell<br/>route only"]
+        EMAIL["Email adapter<br/>contract only"]
+    end
+
+    SENSOR --> INGEST
+    REPLAY --> INGEST
+    ARCHIVE --> PROMOTE
+
+    INGEST --> M_RAW
+    M_RAW --> NORMALIZE
+    NORMALIZE --> M_BUF
+    NORMALIZE --> M_REJ
+    NORMALIZE --> M_CUR
+
+    M_BUF --> QA_GATE
+    QA_GATE -->|pass| PROMOTE
+    QA_GATE -->|fail| M_REJ
+    QA_GATE --> QA_RUN
+    QA_GATE --> QA_RESULT
+    QA_GATE --> QA_COV
+    QA_GATE --> QA_QUAR
+
+    PROMOTE --> C15
+    PROMOTE --> C1H
+    PROMOTE --> OPS_RUN
+    PROMOTE --> OPS_FILE
+
+    OPS_SPLIT --> REPLAY
+    OPS_REPLAY --> M_CUR
+
+    C15 --> API
+    C1H --> API
+    QA_RUN --> API
+    QA_RESULT --> API
+    QA_COV --> API
+    M_CACHE --> API
+
+    API --> LG
+    API --> OPS_JOB
+
+    AIRFLOW --> QA_GATE
+    AIRFLOW --> PROMOTE
+    AIRFLOW --> LG
+    AIRFLOW --> EMAIL
+
+    LG -.route only.-> API
+    LG -.needs job.-> OPS_JOB
+    LG -.report shell.-> EMAIL
+
+    C15 -.future fixed query.-> MART_DEFER
+    C1H -.future fixed query.-> MART_DEFER
+```

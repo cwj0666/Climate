@@ -1,0 +1,22 @@
+# FEMS Chat Routing Skeleton
+
+LangGraph 상세 node 내부는 여기서 비운다. Viowlet가 별도 설계한다.
+
+```mermaid
+flowchart TD
+    REQ["FastAPI /chat request"] --> GUARD["request_guard<br/>auth / size / route limit"]
+    GUARD --> ROUTE["LangGraph shell<br/>route_select only"]
+
+    ROUTE --> QUICK["quick_answer<br/>cache or latest packet"]
+    ROUTE --> EVID["evidence_answer<br/>canonical + qa + ops read"]
+    ROUTE --> JOB["needs_job<br/>create ops.api_job"]
+    ROUTE --> APPROVAL["approval_required<br/>write / replay / email / deploy"]
+
+    QUICK --> RESP["response"]
+    EVID --> RESP
+    JOB --> STATUS["return job_id<br/>/ops/jobs/{job_id}"]
+    APPROVAL --> HUMAN["wait for human approval"]
+
+    STATUS --> RESP
+    HUMAN --> RESP
+```
